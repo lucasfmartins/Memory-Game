@@ -1,4 +1,5 @@
 import { put, select, delay, takeEvery } from "redux-saga/effects"; //acessa a store, nesse caso para obter as cartas
+
 import {
   SELECT_CARD,
   LOCK,

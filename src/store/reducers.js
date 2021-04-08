@@ -11,7 +11,7 @@ import ListBuilder from "../builders/ListBuilder";
 const initialState = {
   isLocked: false,
   isVictoryDialogOpen: false,
-  cards: new ListBuilder().createList(3).shuffle().build(),
+  cards: new ListBuilder().createList(9).shuffle().build(),
 };
 
 const gameReducer = (state = initialState, action) => {
@@ -20,7 +20,7 @@ const gameReducer = (state = initialState, action) => {
       return {
         ...state,
         isVictoryDialogOpen: false,
-        cards: new ListBuilder().createList(3).shuffle().build(),
+        cards: new ListBuilder().createList(9).shuffle().build(),
       };
     case CLOSE_VICTORY_DIALOG:
       return {
